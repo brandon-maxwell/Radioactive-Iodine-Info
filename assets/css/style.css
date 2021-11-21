@@ -1,0 +1,92 @@
+html {
+    padding-bottom: 30px
+}
+body {
+    margin: 20px;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 90%;
+    color: #333;
+    justify-content: center;
+}
+
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: cornflowerblue;
+    position: fixed; /* Sets the navbar to fixed position */
+    top: 0; /* Positions the navbar at the top of the page */
+    width: 100%; 
+    z-index: 3;
+    height: 115px;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align:left;
+    padding: 8px;
+    text-decoration: none;
+  }
+
+  .navbar h1 {
+    color: #f2f2f2;
+      text-align: center;
+  }
+
+  .navbar li {
+    float: left;
+    text-align: right;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+  
+  /* Main content */
+  main {
+    margin-top: 100px; /* Adds a top margin to avoid content overlay */
+  }
+
+.table-wrapper {
+    max-height: 80vh;
+    overflow: scroll;
+}
+
+table {
+    position: relative;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    /* white-space: nowrap; */
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+th {
+    background-color: #eee;
+    position: sticky;
+    top: -1px;
+    z-index: 2;
+
+}
+
+tbody tr td:first-of-type {
+    background-color: #eee;
+    position: sticky;
+    left: -1px;
+    text-align: left;
+}
